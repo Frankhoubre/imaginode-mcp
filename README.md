@@ -1,5 +1,8 @@
 # Imaginode MCP Server
 
+[![smithery badge](https://smithery.ai/badge/imaginode-ai/imaginode)](https://smithery.ai/servers/imaginode-ai/imaginode)
+[![Imaginode MCP server](https://glama.ai/mcp/servers/Frankhoubre/imaginode-mcp/badges/score.svg)](https://glama.ai/mcp/servers/Frankhoubre/imaginode-mcp)
+
 Generate AI **images and videos** from Claude, Cursor, or any MCP client, powered by [imaginode.ai](https://imaginode.ai), the node-canvas AI creation studio.
 
 - **48+ models on one account**: Flux 2, Nano Banana 2, Seedream 5, GPT Image, Kling V3, Seedance 2.5, Veo 3.1, Hailuo, Wan and more.
