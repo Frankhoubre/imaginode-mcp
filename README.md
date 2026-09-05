@@ -1,6 +1,6 @@
 # Imaginode MCP Server
 
-[![smithery badge](https://smithery.ai/badge/imaginode-ai/imaginode)](https://smithery.ai/servers/imaginode-ai/imaginode)
+[![LightNow MCP capabilities](https://lightnow.ai/badge/ai.imaginode/imaginode)](https://lightnow.ai/servers/ai.imaginode/imaginode)
 [![Imaginode MCP server](https://glama.ai/mcp/servers/Frankhoubre/imaginode-mcp/badges/score.svg)](https://glama.ai/mcp/servers/Frankhoubre/imaginode-mcp)
 
 Generate AI **images and videos** from Claude, Cursor, or any MCP client, powered by [imaginode.ai](https://imaginode.ai), the node-canvas AI creation studio.
