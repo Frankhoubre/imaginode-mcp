@@ -1,12 +1,12 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-09-29/server.schema.json",
   "name": "ai.imaginode/imaginode",
-  "description": "Generate AI images and videos (Flux, Nano Banana, Kling, Veo, 48+ models), refunds on failure.",
+  "description": "Generate AI images and videos (Flux, Nano Banana, Kling, Veo, 89 models), refunds on failure.",
   "repository": {
     "url": "https://github.com/Frankhoubre/imaginode-mcp",
     "source": "github"
   },
-  "version": "1.0.0",
+  "version": "1.0.1",
   "websiteUrl": "https://imaginode.ai",
   "remotes": [
     {

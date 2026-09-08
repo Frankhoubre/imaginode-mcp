@@ -2,7 +2,7 @@
   "author": "Frankhoubre",
   "authorUrl": "https://github.com/Frankhoubre",
   "cloudEndpoint": "https://imaginode.ai/api/mcp",
-  "description": "Generate AI images and videos from Claude, Cursor or any MCP client, powered by imaginode.ai: 48+ models, transparent credit pricing, automatic refunds on failure. Hosted remote server at https://imaginode.ai/api/mcp.",
+  "description": "Generate AI images and videos from Claude, Cursor or any MCP client, powered by imaginode.ai: 89 models, transparent credit pricing, automatic refunds on failure. Hosted remote server at https://imaginode.ai/api/mcp.",
   "homepage": "https://imaginode.ai",
   "identifier": "imaginode",
   "name": "Imaginode",

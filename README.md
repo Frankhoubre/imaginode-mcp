@@ -5,7 +5,7 @@
 
 Generate AI **images and videos** from Claude, Cursor, or any MCP client, powered by [imaginode.ai](https://imaginode.ai), the node-canvas AI creation studio.
 
-- **48+ models on one account**: Flux 2, Nano Banana 2, Seedream 5, GPT Image, Kling V3, Seedance 2.5, Veo 3.1, Hailuo, Wan and more.
+- **89 models on one account**: Flux 2, Nano Banana 2, Seedream 5, GPT Image, Kling V3, Seedance 2.5, Veo 3.1, Hailuo, Wan and more.
 - **Transparent pricing**: every generation returns its exact cost in credits (1 credit = €0.01) before the result. Failed generations are refunded automatically.
 - **Remote server, nothing to install**: `https://imaginode.ai/api/mcp` (Streamable HTTP).
 
