@@ -5,9 +5,21 @@
 
 Generate AI **images and videos** from Claude, Cursor, or any MCP client, powered by [imaginode.ai](https://imaginode.ai), the node-canvas AI creation studio.
 
-- **89 models on one account**: Flux 2, Nano Banana 2, Seedream 5, GPT Image, Kling V3, Seedance 2.5, Veo 3.1, Hailuo, Wan and more.
-- **Transparent pricing**: every generation returns its exact cost in credits (1 credit = €0.01) before the result. Failed generations are refunded automatically.
+- **89 models on one account**: Flux 2, Nano Banana 2, Seedream 5, GPT Image, Kling V3, Seedance 2.5, Veo 3.1, Hailuo, Wan and more. The full catalogue, with a page per model, is at [imaginode.ai/models](https://imaginode.ai/en/models).
+- **Transparent pricing**: every generation returns its exact cost in credits (1 credit = €0.01) before the result. Failed generations are refunded automatically. Price a run before you make it with the [cost calculator](https://imaginode.ai/en/calculator), which needs no account.
 - **Remote server, nothing to install**: `https://imaginode.ai/api/mcp` (Streamable HTTP).
+
+## What it costs before you call it
+
+The API returns the exact cost of every generation, but you often want the
+number before writing the call. Two public pages answer that without an
+account:
+
+- [Cost calculator](https://imaginode.ai/en/calculator): pick a model, a
+  duration and a resolution, read the price in credits and in dollars.
+- [`GET /api/models`](https://imaginode.ai/api/models): the same catalogue and
+  prices as machine-readable JSON, no auth, so a client can build its own
+  estimate.
 
 ## Quickstart
 
