@@ -2,7 +2,7 @@
   "author": "Frankhoubre",
   "authorUrl": "https://github.com/Frankhoubre",
   "cloudEndpoint": "https://imaginode.ai/api/mcp",
-  "description": "Generate AI images and videos from Claude, Cursor or any MCP client, powered by imaginode.ai: 89 models, transparent credit pricing, automatic refunds on failure. Hosted remote server at https://imaginode.ai/api/mcp.",
+  "description": "Generate AI images and videos from ChatGPT, Claude, Cursor or any MCP client, powered by imaginode.ai: 89 models, sign in with your account or use an API key, transparent credit pricing, automatic refunds on failure. Hosted remote server at https://imaginode.ai/api/mcp.",
   "homepage": "https://imaginode.ai",
   "identifier": "imaginode",
   "name": "Imaginode",
@@ -12,7 +12,7 @@
     {
       "name": "list_models",
       "title": "List Imaginode models",
-      "description": "List the available AI models with their kind (image, video), default cost in credits (1 credit = €0.01) and billable options. Call this before generating if you need a specific model, otherwise sensible defaults are used.",
+      "description": "List the available AI models with their kind (image, video), default cost in credits (1 credit = $0.012, or €0.01 when billed in euros) and billable options. Call this before generating if you need a specific model, otherwise sensible defaults are used.",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -25,6 +25,32 @@
             "description": "Only return models of this kind."
           }
         }
+      }
+    },
+    {
+      "name": "list_templates",
+      "title": "List Imaginode templates",
+      "description": "List the curated workflow templates of the Imaginode canvas (product shoots, renovations, talking avatars, video effects, kids books, thumbnails, and more): for each, what it produces, which models it uses and the approximate cost of one run. Use get_template for the full recipe, or send the user its open_url.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {}
+      }
+    },
+    {
+      "name": "get_template",
+      "title": "Get a template recipe",
+      "description": "Full recipe of one template: nodes with their model, prompts and settings, the wiring between them (which output feeds which input), the example renders, and the open_url that opens it ready to run in the user's canvas. Follow the wiring order to reproduce it with generate_image and generate_video: a node whose port is \"image\" or \"refImages\" needs the URL produced by its source node.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "key": {
+            "type": "string",
+            "description": "Template key from list_templates."
+          }
+        },
+        "required": [
+          "key"
+        ]
       }
     },
     {
@@ -47,7 +73,7 @@
             "items": {
               "type": "string"
             },
-            "description": "Optional input image URLs (editing or reference). Must be media hosted on the Imaginode account (Firebase Storage URLs from the media library or previous generations)."
+            "description": "Optional input image URLs (editing or reference). Must be media hosted on the Imaginode account (Firebase Storage URLs from the media library or previous generations) or example URLs from get_template."
           },
           "aspect_ratio": {
             "type": "string",
@@ -118,5 +144,5 @@
       }
     }
   ],
-  "version": "1.0.0"
+  "version": "1.1.0"
 }

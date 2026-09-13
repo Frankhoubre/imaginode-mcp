@@ -1,12 +1,12 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-09-29/server.schema.json",
   "name": "ai.imaginode/imaginode",
-  "description": "Generate AI images and videos from 89 models on one credit balance, refunds on failure.",
+  "description": "AI images and videos in ChatGPT, Claude and agents: 89 models, sign in or API key, auto refunds.",
   "repository": {
     "url": "https://github.com/Frankhoubre/imaginode-mcp",
     "source": "github"
   },
-  "version": "1.0.2",
+  "version": "1.1.0",
   "websiteUrl": "https://imaginode.ai",
   "remotes": [
     {
@@ -15,8 +15,8 @@
       "headers": [
         {
           "name": "Authorization",
-          "description": "Bearer imk_… API key, created in your profile at https://imaginode.ai/profile (verified account required, trial credits included).",
-          "isRequired": true,
+          "description": "Optional: Bearer imk_… API key from https://imaginode.ai/profile. Without it, the server starts an OAuth sign-in with your Imaginode account (ChatGPT, Claude, Claude Code).",
+          "isRequired": false,
           "isSecret": true
         }
       ]
